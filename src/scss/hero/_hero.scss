@@ -1,0 +1,20 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.hero-container{
+    color: v.$main;
+    text-align: center;
+    margin-top: 10rem;
+    position: sticky;
+
+    .title{
+        font-size: 5rem;
+    }
+
+    .hero-img{
+        img{
+            width: 350px;
+            height: 350px;
+        }
+    }
+}

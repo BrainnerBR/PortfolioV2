@@ -1,0 +1,53 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+
+.navigation-bar{
+
+  display: flex;
+  justify-content: center;
+  nav {
+    overflow: hidden;
+    background-color: v.$grisOscuro;
+    top: 0;
+    margin-top: 1rem;
+    width: 40%;
+    border-radius: 100px;
+
+    ul {
+      text-align: center;
+      list-style-type: none;
+      list-style-type: none;
+      margin: 0;
+      padding: 15px;
+      li {
+        display: inline;
+        font-family: "Fira Sans", sans-serif;
+        font-size: 1.5rem;
+        position: relative;
+        a {
+          color: v.$main;
+          text-decoration: none;
+          padding: 14px;
+          position: relative;
+          &::after{
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: v.$main;
+            transition: width 0.3s ease, left 0.3s ease;
+          }
+          &:hover::after {
+            width: 100%;
+            left: 0;
+          }
+
+        }
+      }
+    }
+  }
+}
+

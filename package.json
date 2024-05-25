@@ -1,0 +1,34 @@
+{
+  "name": "portfolio-v1",
+  "version": "1.0.0",
+  "description": "portfolio web",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "start": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrainnerBR/Portfolio-Brainer.git"
+  },
+  "keywords": [
+    "Sass",
+    "npm",
+    "JS"
+  ],
+  "author": "Brainer Blanco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrainnerBR/Portfolio-Brainer/issues"
+  },
+  "homepage": "https://github.com/BrainnerBR/Portfolio-Brainer#readme",
+  "dependencies": {
+    "gulp": "^5.0.0",
+    "sass": "^1.77.2",
+    "typeit": "^8.8.3"
+  },
+  "devDependencies": {
+    "gulp-sass": "^5.1.0"
+  }
+}

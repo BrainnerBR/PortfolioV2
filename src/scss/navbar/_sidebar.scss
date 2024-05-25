@@ -1,0 +1,71 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.sidebar {
+  position: fixed;
+  top: 50%; /* Centrado verticalmente */
+  right: 0;
+  transform: translateY(-50%); /* Centrado verticalmente */
+  width: 5rem; /* Ajusta el ancho según tus necesidades */
+  height: 60%; /* Ajusta la altura según tus necesidades */
+  margin-right: 1rem;
+  background-color: v.$grisOscuro; /* Usando la variable definida */
+  border-radius: 25px; /* Ajusta el radio según tus necesidades */
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Asegura que la barra lateral esté por encima de otros elementos */
+  display: flex; /* Para centrar el contenido en altura */
+  align-items: center; /* Para centrar el contenido en altura */
+
+  nav {
+    width: 100%;
+    height: 100%;
+    
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; /* Espacia uniformemente los elementos */
+
+      li {
+        display: block;
+        font-family: "Fira Sans", sans-serif;
+        font-size: 2rem;
+        position: relative;
+
+        a {
+          color: v.$main; /* Usando la variable definida */
+          text-decoration: none;
+          display: block; /* Para que el enlace ocupe toda la anchura del elemento li */
+          position: relative;
+          text-align: center; /* Centra el texto horizontalmente */
+
+          i {
+            transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Aplica la transición a los íconos */
+          }
+
+          &:hover .bi-envelope, &:focus .bi-envelope {
+            color: #ff4343;
+          }
+
+          &:hover .bi-linkedin, &:focus .bi-linkedin {
+            color: #0762C8;
+
+          }
+
+          &:hover .bi-github, &:focus .bi-github {
+            color: v.$blanco;
+
+          }
+
+          &:hover .bi-instagram, &:focus .bi-instagram {
+            color: #C13584;
+
+          }
+        }
+      }
+    }
+  }
+}
