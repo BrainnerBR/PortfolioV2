@@ -6,31 +6,42 @@
     <link rel="stylesheet" href="/public/build/css/app.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <title>Brainer Blanco</title>
 </head>
-<body>
+    <body id="canvas">
+        <canvas id="canvas"></canvas>
+
+
+
+
+
     <div class="navigation-bar" id="navigation-bar">
         <nav>
             <ul>
-                <li><a href="#">Brainer</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Proyects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/">Brainer</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </div>
     <div class="sidebar" id="sidebar">
         <nav>
             <ul>
-                <li><a href="#"><i class="bi bi-envelope"></i></a></li>
-                <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
-                <li><a href="#"><i class="bi bi-github"></i></a></li>
-                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwQnhBhvQWFfGlSZtbhMxFnhpXzvfvKvGnvTJsVsKWKBFZvktswStbVzrlSVXDNHwgMLrxC" target="_blank"><i class="bi bi-envelope"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/brainner-josue-blanco-82ba17230/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                <li><a href="https://github.com/BrainnerBR" target="_blank"><i class="bi bi-github"></i></a></li>
+                <li><a href="https://www.instagram.com/brainner_br/"  target="_blank"><i class="bi bi-instagram"></i></a></li>
             </ul>
         </nav>
     </div>
@@ -42,7 +53,232 @@
             <img src="./src/img/Hand coding-bro.png" alt="Hero Image">
         </div>
     </div>
-    <script src="/public/build/js/typeit.js"></script>
+    <div class="double-arrows">
+        <div><i class="bi bi-chevron-double-down"></i></div>
+    </div>
+    <section id="about-me" class="about-me">
+        <div class="container" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <div class="about-me-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-me-text">
+                <p>Hey there! I'm Brainer Blanco, a computer science student who's been diving deep into my passion: front-end web development. My main goal right now is to get some real-world experience, learn something new every day, and, of course, help create some cool and innovative stuff. 
+                    <br>Think of me as your eager apprentice, ready to soak up knowledge and sprinkle some creativity into the mix!</p>
+            </div>
+            <button class="btn">See CV</button>
+        </div>
+    </section>
 
+    <section id="projects" class="projects">
+        <h1 class="title">Projects</h1>
+        <div class="container">
+            <div class="project-container">
+                <div class="project-content">
+                    <div class="project-text" data-aos="zoom-in">
+                        <h2>MaterialesCR</h2>
+                        <p>Informative website for a national business selling construction materials such as concrete, cement bags, pavers, and building block  <br> One of my first freelance projects in web development was creating this website. I currently maintain it by updating images and improving styles and the user interface. This is version number 5 of the website.</p>
+                           <button class="btn">See Demo</button>
+                           <button class="btn">See Code</button>
+                        <div class="technologies-container">
+                            <ul>
+                                <li><i class="devicon-html5-plain colored"></i>                                </li>
+                                <li><i class="devicon-css3-plain colored"></i></li>
+                                <li><i class="devicon-javascript-plain"></i></li>
+                                <li><i class="devicon-firebase-plain colored"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-img">
+                        <img src="./src/img/materiales.png" alt="Project Image" data-aos="zoom-in">
+                    </div>
+                </div>
+            </div>
+            <div class="project-container reverse">
+                <div class="project-content">
+                    <div class="project-text" data-aos="zoom-in">
+                        <h2>Photograph Studio</h2>
+                        <p>Website for a photography studio, primarily styled with Bootstrap, focused on selling their products and packages. It features navigation and a gallery to showcase their previous work to users.</p>
+                        <button class="btn">See Demo</button>
+                        <button class="btn">See Code</button>
+
+                        <div class="technologies-container">
+                            <ul>
+                                <li><i class="devicon-html5-plain colored"></i></li>
+                                <li><i class="devicon-css3-plain colored"></i></li>
+                                <li><i class="devicon-javascript-plain"></i></li>
+                                <li><i class="devicon-bootstrap-plain"></i></li>                          
+                              </ul>
+                        </div>
+                    </div>
+                    <div class="project-img">
+                        <img src="./src/img/fotoEstudio.png" alt="Project Image" data-aos="zoom-in">
+                    </div>
+                </div>
+            </div>
+            <div class="project-container">
+                <div class="project-content">
+                    <div class="project-text" data-aos="zoom-in">
+                        <h2>Happy Hour</h2>
+                        <p>It's a drinking game! for groups of young friends, with different game modes where the cards change according to the selected mode. This web application, created with ReactJS, is primarily designed for mobile.
+
+                        </p>
+                           <button class="btn">See Demo</button>
+                           <button class="btn">See Code</button>
+                        <div class="technologies-container">
+                            <ul>
+                                <li><i class="devicon-html5-plain-wordmark"></i></li>
+                                <li><i class="devicon-css3-plain-wordmark"></i></li>
+                                <li><i class="devicon-react-original"></i></li>
+                                <li><i class="devicon-javascript-plain"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-img">
+                        <img src="./src/img/Happy-hour.png" alt="Project Image" data-aos="zoom-in">
+                    </div>
+                </div>
+            </div>
+            <div class="project-container reverse">
+                <div class="project-content">
+                    <div class="project-text" data-aos="zoom-in">
+                        <h2>TareApp</h2>
+                        <p>A web application focused on organizing pending tasks, sorted by projects. Each user registers and can create their own projects, and within each project, they can add pending or completed tasks.</p>
+                        <button class="btn">See Demo</button>
+                        <button class="btn">See Code</button>
+
+                        <div class="technologies-container">
+                            <ul>
+                                <li><i class="devicon-html5-plain colored"></i>                                </li>
+                                <li><i class="devicon-sass-original"></i></li>
+                                <li><i class="devicon-javascript-plain"></i></li>
+                                <li><i class="devicon-php-plain"></i></li>  
+                                <li><i class="devicon-mysql-plain-wordmark"></i></li>  
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-img">
+                        <img src="./src/img/tareapp.png" alt="Project Image" data-aos="zoom-in">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="more-porjects">
+        <h1 class="title">More Projects</h1>
+
+        <div class="carousel">
+            <div class="carousel--wrapper">
+              <div class="carousel--item">
+                <a href="http://google.com">
+                  <figure><img src="/src/img/BShoes.png" alt="" /></figure>
+                </a>
+              </div>
+              
+              <div class="carousel--item">
+                <a href="url2.html">
+                  <figure><img src="/src/img/food.png" alt="" /></figure>
+                </a>
+              </div>
+              
+              <div class="carousel--item">
+                <a href="url3.html">
+                  <figure><img src="/src/img/carrito.png" alt="" /></figure>
+                </a>
+              </div>
+              
+              <div class="carousel--item">
+                <a href="url4.html">
+                  <figure><img src="/src/img/calculadora.png" alt="" /></figure>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+
+    </section>
+
+    <section>
+        <div class="toolbox-container">
+
+        <h1 data-aos="zoom-in">Skills & Technologies</h1>
+        <h2 data-aos="zoom-in">My Toolbox & Technologies i can do</h2>
+        <div class="toolbox-wrapper">
+            <ul>
+                
+                <li data-aos="zoom-out"><i class="devicon-html5-plain"></i>HTML</li>
+                <li data-aos="zoom-out"><i class="devicon-css3-plain"></i>CSS3</li>
+                <li data-aos="zoom-out"><i class="devicon-javascript-plain"></i>JavaScript</li>
+                <li data-aos="zoom-out"><i class="devicon-git-plain"></i>Git</li>
+                <li data-aos="zoom-out"><i class="devicon-github-original"></i>Github</li>
+                <li data-aos="zoom-out"><i class="devicon-firebase-plain"></i>Firebase</li>
+                <li data-aos="zoom-out"><i class="devicon-sass-original"></i>SASS</li>
+                <li data-aos="zoom-out"><i class="bi bi-phone"></i>Responsive Websites</li>
+                <li data-aos="zoom-out"><i class="devicon-php-plain"></i>PHP</li>
+                <li data-aos="zoom-out"><i class="devicon-mysql-original"></i>MySQL</li>
+                <li data-aos="zoom-out"><i class="devicon-bootstrap-plain"></i>Bootstrap</li>
+                <li data-aos="zoom-out"><i class="devicon-tailwindcss-original"></i>Tailwind</li>
+            </ul>
+        </div>
+        <div class="toolbox-container">
+            <h2 >Technologies i've been learning</h2>
+                <p data-aos="zoom-in">I have been reinforcing and practicing technologies such as JavaScript <i class="devicon-javascript-plain"></i>, 
+                    PHP <i class="devicon-php-plain"></i>, and MySQL <i class="devicon-mysql-original"></i>, 
+                    while also delving deeper into ReactJS <i class="devicon-react-original"></i>. 
+                    In addition to improving my programming skills, I have been learning project 
+                    management softwares, organized frameworks like SCRUM, and other aspects related to work
+                    management.</p>
+            <div class="toolbox-wrapper">
+                <ul>
+                    <li><i class="devicon-react-original"></i>React</li>
+                    <li><i class="devicon-wordpress-plain"></i>Wordpress</li>
+                    <li><i class="devicon-jquery-plain"></i>JQuery</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+    <footer>
+        <div class="footer" id="contact">
+            <div class="social-icons">
+                <ul>
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwQnhBhvQWFfGlSZtbhMxFnhpXzvfvKvGnvTJsVsKWKBFZvktswStbVzrlSVXDNHwgMLrxC" target="_blank"><i class="bi bi-envelope"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/brainner-josue-blanco-82ba17230/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="https://github.com/BrainnerBR" target="_blank"><i class="bi bi-github"></i></a></li>
+                    <li><a href="https://www.instagram.com/brainner_br/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="mail-me">
+                    <span>Email</span>
+                    <input placeholder="Mail Me">
+                    <button><i class="bi bi-send"></i>Send Email</button>
+                </div>
+                <div class="center">
+                    <a href="#about-me">Brainer</a>
+                </div>
+                <div class="projects">
+                    <a href="#projects">Projects</a>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init();
+        });
+    </script>
+    <script src="/public/build/js/typeit.js"></script>
+    <script src="/public/build/js/carousel.js"></script>
+    <script src="/public/build/js/scroll.js"></script>
+    <script src="/public/build/js/background.js"></script>
+    <script src="/public/build/js/footer.js"></script>
 </body>
+
 </html>

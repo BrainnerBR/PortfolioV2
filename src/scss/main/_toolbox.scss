@@ -1,0 +1,49 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.toolbox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    text-align: center;
+    color: v.$main;
+    p{
+        text-align: center;
+        padding-left: 15rem;
+        padding-right: 15rem;
+        font-size: 1.2rem;
+        color: v.$blanco;
+      }  
+
+  
+    .toolbox-wrapper, .container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+  
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        list-style: none;
+  
+        li {
+          flex: 0 0 calc(16.66% - 1em); // Divide el ancho por 6 menos el margen
+          margin: 0.5rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          i{
+            font-size: 3rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+  

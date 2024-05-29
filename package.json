@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/BrainnerBR/Portfolio-Brainer#readme",
   "dependencies": {
+    "aos": "^2.3.4",
     "gulp": "^5.0.0",
     "sass": "^1.77.2",
     "typeit": "^8.8.3"

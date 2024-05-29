@@ -1,16 +1,25 @@
 @use 'base';
 @use 'navbar';
 @use 'hero';
+@use 'main';
 
 body {
-    background-image: url('https://images.unsplash.com/photo-1546825094-66e983c4c7de?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: darken;
-    background-color: rgba(0, 0, 0, 0.550);
-    background-blend-mode: darken;
-
     font-family: "REM", sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    background-image: radial-gradient(circle at top right, rgba(32, 1, 51, 0.199),transparent),
+      radial-gradient(circle at 20% 80%, rgba(8, 143, 37, 0.226), transparent);
 
+      overflow: auto;
 }
 
+canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Para que el canvas esté detrás del contenido */
+    opacity: 0.5; /* Ajusta la opacidad según sea necesario */
+}
