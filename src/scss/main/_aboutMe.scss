@@ -32,6 +32,11 @@
             font-size: 1.2rem;
             float: left;
             transition: all 0.3s ease-in-out;
+
+            a{
+                text-decoration: none;
+                color: v.$grisOscuro;
+            }
             &:hover{
                 background-color: darken(v.$main, 20%);
                 cursor: pointer;

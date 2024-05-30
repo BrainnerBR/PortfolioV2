@@ -3,13 +3,17 @@
 @use 'hero';
 @use 'main';
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "REM", sans-serif;
     width: 100%;
     height: 100%;
     background-color: #000;
-    background-image: radial-gradient(circle at top right, rgba(32, 1, 51, 0.199),transparent),
-      radial-gradient(circle at 20% 80%, rgba(8, 143, 37, 0.226), transparent);
+    background-image: radial-gradient(circle at top right, rgba(17, 51, 1, 0.199),transparent),
+      radial-gradient(circle at 20% 80%, rgba(36, 8, 192, 0.226), transparent);
 
       overflow: auto;
 }

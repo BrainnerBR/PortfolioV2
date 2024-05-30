@@ -1,3 +1,5 @@
+const { off } = require("gulp");
+
 document.addEventListener('DOMContentLoaded', () => {
   const linksNavigation = document.querySelectorAll('.navigation-bar a');
   const linksFooter = document.querySelectorAll('.footer a'); // Selecciona todos los enlaces dentro de .footer
@@ -24,3 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+
