@@ -1,29 +1,15 @@
 @use 'base';
 @use 'navbar';
-@use 'hero';
 @use 'main';
+@use 'projects';
 
-html{
+
+html {
     scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Quicksand", sans-serif;
 }
 
-body {
-    font-family: "REM", sans-serif;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    background-image: radial-gradient(circle at top right, rgba(17, 51, 1, 0.199),transparent),
-      radial-gradient(circle at 20% 80%, rgba(36, 8, 192, 0.226), transparent);
 
-      overflow: auto;
-}
-
-canvas{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Para que el canvas esté detrás del contenido */
-    opacity: 0.5; /* Ajusta la opacidad según sea necesario */
-}
