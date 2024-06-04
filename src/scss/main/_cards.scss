@@ -1,0 +1,103 @@
+@use 'base/variables' as v;
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  gap: 2rem;
+  padding: 0 1rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+    margin-top: 10rem;
+  }
+}
+
+// Card
+.card {
+  display: flex;
+  flex-direction: row;
+  max-width: 40rem;
+  border-radius: 1rem;
+  box-shadow: 0 20px 40px -14px v.$negro;
+  overflow: hidden;
+  box-shadow: 0.4rem 0.4rem v.$negro;
+  border: 0.5vmin solid v.$negro;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  // Card Image
+  .card-image {
+    height: 25rem;
+    width: 60%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: .50rem;
+    }
+  }
+
+  // Card Content
+  .card-content {
+    padding: 1rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .category {
+      text-transform: uppercase;
+      font-size: 1rem;
+      font-weight: 600;
+      color: v.$negro;
+      padding: 10px 7px 0;
+    }
+
+    .heading {
+      color: v.$negro;
+      padding: 7px;
+    }
+
+    .card-icon {
+      background-color: v.$negro;
+      border-radius: 1rem;
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .btns {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 1rem;
+
+      .btn {
+        border: 0.5vmin solid v.$negro;
+        box-shadow: 0.4rem 0.4rem v.$negro;
+        border-radius: 10px;
+        padding: 0.5rem 1rem;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background-color: v.$main;
+          color: v.$blanco;
+        }
+      }
+    }
+  }
+}

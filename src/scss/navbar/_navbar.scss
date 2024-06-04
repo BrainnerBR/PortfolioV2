@@ -1,11 +1,13 @@
+@use 'base/variables' as v;
+
 header {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #000; /* Puedes cambiar el color de fondo */
-  color: #ffff;
-  padding: 20px; /* Puedes cambiar el padding */
+  background-color: v.$negro; /* Puedes cambiar el color de fondo */
+  color: v.$blanco;
+  padding: 1rem; /* Puedes cambiar el padding */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Puedes cambiar la sombra */
   z-index: 1000; /* Para que quede encima de otros elementos */
   transition: top 0.3s ease; /* Transición suave cuando cambia la posición */
@@ -17,7 +19,7 @@ header {
   }
 
   .logo {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 800;
   }
   .links {
@@ -29,7 +31,7 @@ header {
 
   .links li {
     margin-left: 20px; /* Puedes cambiar el margen izquierdo */
-    font-size: 2rem;
+    font-size: 1.3rem;
 
   }
 }

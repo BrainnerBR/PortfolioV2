@@ -1,0 +1,38 @@
+@use 'base/variables' as v;
+
+.skills-title{
+    text-align: center;
+    margin: 5rem;
+    font-size: 2rem;
+}
+
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    text-align: center;
+    background-color: v.$negro;
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        list-style: none;
+
+        li{
+            flex: 0 0 calc(16%); // Divide el ancho por 6 menos el margen
+            margin: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            i{
+                font-size: 4rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+              }
+        }
+    }
+}

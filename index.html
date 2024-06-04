@@ -7,11 +7,10 @@
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
-
-      <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -29,119 +28,155 @@
             <li>Hire Me</li>
           </ul>
         </nav>
-      </header>
+    </header>
 
-      <section>
+    <section>
         <div class="hero">
-          <div class="left-container">
-            <div class="hello-world">
-              
-                
+            <div class="left-container">
+                <div class="hello-world"></div>
+                <h1><span style="font-weight: 600;" id="message-bubble"></span></h1>
+                <h2>Hey there! I'm Brainer Blanco 👋, a computer science student who's been diving deep into my passion: front-end web development.<span style="font-weight: 600;"> My main goal right now is to get some real-world experience, learn something new every day, and, of course, help create some cool and innovative stuff.</span> 
+                    <br>Think of me as your eager apprentice, <span style="font-weight: 600;">ready to soak up knowledge and sprinkle some creativity into the mix!</span>
+                </h2>
+
+                <div class="btns">
+                    <a class="btn contact-btn">Contact</a>
+                    <a class="btn">See CV</a>
+                </div>
             </div>
-            <h1><span style="font-weight: 600;" id="message-bubble"></span></h1>
-            <h2>Hey there! I'm Brainer Blanco 👋, a computer science student who's been diving deep into my passion: front-end web development.<span style="font-weight: 600;"> My main goal right now is to get some real-world experience, learn something new every day, and, of course, help create some cool and innovative stuff.</span> 
-                <br>Think of me as your eager apprentice, <span style="font-weight: 600;">ready to soak up knowledge and sprinkle some creativity into the mix!</span></h2>
-
-            <div class="btns">
-              <a class="btn contact-btn">Contact</a>
-                <a class="btn">See CV</a>
-              </div>
-          </div>
-          <div class="right-container">
-            <img src="/src/img/brainerSF.jpg" alt="Right Image">
-          </div>
-
-
+            <div class="right-container">
+                <img src="/src/img/brainerSF.jpg" alt="Right Image">
+            </div>
         </div>
-      </section>
-      
+    </section>
 
-      <section class="projects" id="projects">
+    <section class="projects" id="projects">
         <h1 class="project-title">My projects</h1>
-
         <div class="cards-container">
+            <div class="card">
+                <div class="card-image">
+                    <img src="/src/img/materiales.png" alt="MaterialesCR Image">
+                </div>
+                <div class="card-content">
+                    <div class="category">MaterialesCR</div>
+                    <div class="description">
+                        <p>Informative website for a national business selling construction materials such as concrete, cement bags, building block. One of my first freelance projects. I currently maintain it by updating images and improving styles and the user interface.</p>
+                    </div>
+                    <div class="card-icon">
+                        <span class="name">
+                            <i class="devicon-html5-plain-wordmark colored"></i>
+                            <i class="devicon-css3-plain-wordmark colored"></i>
+                            <i class="devicon-javascript-plain colored"></i>
+                            <i class="devicon-firebase-plain-wordmark colored"></i>
+                        </span>
+                    </div>
+                    <div class="btns">
+                        <a class="btn">Demo</a>
+                        <a class="btn">Code</a>
+                    </div>
+                </div>
+            </div>
 
-          <div class="card">
-            <div class="card-image"><img src="/src/img/materiales.png"></div>
-            <div class="category"> MaterialesCR </div>
-            <div class="heading"> Informative website for a national business selling construction materials such as concrete, cement bags, building block. One of my first freelance projects. I currently maintain it by updating images and improving styles and the user interface.
-               <div class="card-icon"><span class="name">
-                  <i class="devicon-html5-plain-wordmark colored">
-                  <i class="devicon-css3-plain-wordmark colored"></i>
-                  <i class="devicon-javascript-plain colored"></i>
-                  <i class="devicon-firebase-plain-wordmark colored"></i>
-               </i></span></div>
-               <div class="btns">
-                  <a class="btn">Demo</a>
-                  <a class="btn">Code</a>
-               </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="/src/img/Happy-hour.png" alt="Happy Hour Image">
+                </div>
+                <div class="card-content">
+                    <div class="category">Happy Hour</div>
+                    <div class="description">
+                        <p>It's a drinking game! for groups of young friends, with different game modes where the cards change according to the selected mode. This web application, created with ReactJS, is primarily designed for mobile.</p>
+                    </div>
+                    <div class="card-icon">
+                        <span class="name">
+                            <i class="devicon-html5-plain-wordmark colored"></i>
+                            <i class="devicon-react-original-wordmark colored"></i>
+                            <i class="devicon-css3-plain-wordmark colored"></i>
+                            <i class="devicon-javascript-plain colored"></i>
+                        </span>
+                    </div>
+                    <div class="btns">
+                        <a class="btn">Demo</a>
+                        <a class="btn">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="/src/img/fotoEstudio.png" alt="Photographic Studio Image">
+                </div>
+                <div class="card-content">
+                    <div class="category">Photographic Studio</div>
+                    <div class="description">
+                        <p>Website for a photography studio, primarily styled with Bootstrap, focused on selling their products and packages. It features navigation and a gallery to showcase their previous work to users.</p>
+                    </div>
+                    <div class="card-icon">
+                        <span class="name">
+                            <i class="devicon-html5-plain-wordmark colored"></i>
+                            <i class="devicon-css3-plain-wordmark colored"></i>
+                            <i class="devicon-javascript-plain colored"></i>
+                            <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                        </span>
+                    </div>
+                    <div class="btns">
+                        <a class="btn">Demo</a>
+                        <a class="btn">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="/src/img/tareapp.png" alt="TareApp Image">
+                </div>
+                <div class="card-content">
+                    <div class="category">TareApp</div>
+                    <div class="description">
+                        <p>A web application focused on organizing pending tasks, sorted by projects. Each user registers and can create their own projects, and within each project, they can add pending or completed tasks.</p>
+                    </div>
+                    <div class="card-icon">
+                        <span class="name">
+                            <i class="devicon-html5-plain-wordmark colored"></i>
+                            <i class="devicon-sass-original colored"></i>
+                            <i class="devicon-javascript-plain colored"></i>
+                            <i class="devicon-php-plain colored"></i>
+                            <i class="devicon-mysql-plain-wordmark colored"></i>
+                        </span>
+                    </div>
+                    <div class="btns">
+                        <a class="btn">Demo</a>
+                        <a class="btn">Code</a>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-          <div class="card">
-            <div class="card-image"><img src="/src/img/Happy-hour.png"></div>
-            <div class="category"> Happy Hour </div>
-            <div class="heading"> It's a drinking game! for groups of young friends, with different game modes where the cards change according to the selected mode. This web application, created with ReactJS, is primarily designed for mobile.
-              <div class="card-icon"><span class="name">
-                <i class="devicon-html5-plain-wordmark colored">
-                  <i class="devicon-react-original-wordmark colored"></i>
-                <i class="devicon-css3-plain-wordmark colored"></i>
-                <i class="devicon-javascript-plain colored"></i>
-             </i></span></div> 
-             <div class="btns">
-              <a class="btn">Demo</a>
-              <a class="btn">Code</a>
-           </div>
-            
-            
-            </div>
+    <section>
+        <div class="banner">
+            <a>More Projects</a>
         </div>
+    </section>
 
-        <div class="card">
-          <div class="card-image"><img src="/src/img/fotoEstudio.png"></div>
-          <div class="category"> Photographic Studio </div>
-          <div class="heading">Website for a photography studio, primarily styled with Bootstrap, focused on selling their products and packages. It features navigation and a gallery to showcase their previous work to users.
-            <div class="card-icon"><span class="name">
-              <i class="devicon-html5-plain-wordmark colored">
-              <i class="devicon-css3-plain-wordmark colored"></i>
-              <i class="devicon-javascript-plain colored"></i>
-              <i class="devicon-bootstrap-plain-wordmark colored"></i>
-           </i></span></div>   
-           <div class="btns">
-            <a class="btn">Demo</a>
-            <a class="btn">Code</a>
-         </div>
-          </div>
-      </div>
+    <section class="skills">
+        <h1 class="skills-title">Things I Can Do</h1>
 
-      <div class="card">
-        <div class="card-image"><img src="/src/img/tareapp.png"></div>
-        <div class="category"> TareApp </div>
-        <div class="heading"> A web application focused on organizing pending tasks, sorted by projects. Each user registers and can create their own projects, and within each project, they can add pending or completed tasks.
-          <div class="card-icon"><span class="name">
-            <i class="devicon-html5-plain-wordmark colored">
-            <i class="devicon-sass-original colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-            <i class="devicon-php-plain colored"></i>
-            <i class="devicon-mysql-plain-wordmark colored"></i>
-          </i></span></div>     
-          <div class="btns">
-            <a class="btn">Demo</a>
-            <a class="btn">Code</a>
-         </div>
-           </div>
-    </div>
-
+        <div class="skills-container">
+            <ul>
+                <li><i class="devicon-html5-plain-wordmark colored"></i></li>
+                <li><i class="devicon-css3-plain-wordmark colored"></i></li>
+                <li><i class="devicon-sass-original colored"></i></li>
+                <li><i class="devicon-javascript-plain colored"></i></li>
+                <li><i class="devicon-bootstrap-plain-wordmark colored"></i></li>
+                <li><i class="devicon-tailwindcss-original colored"></i></li>
+                <li><i class="devicon-firebase-plain-wordmark colored"></i></li>
+                <li><i class="devicon-mysql-plain-wordmark colored"></i></li>
+            </ul>
+        
         </div>
-      </section>
+    </section>
 
-      <section class="skills">
-        <h1>Things i can do</h1>
-      </section>
-      
-
-
-      <script src="/public/build/js/navbar.js"></script>
-      <script src="/public/build/js/typeIt.js"></script>
-    </body>
+    <script src="/public/build/js/navbar.js"></script>
+    <script src="/public/build/js/typeIt.js"></script>
+</body>
 </html>
